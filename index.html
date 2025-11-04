@@ -4,124 +4,103 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>A Forgotten Kingdom - eSports Team</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0a0a0a;
-      color: #f1c40f;
-    }
 
-    header {
-      text-align: center;
-      background-color: #111;
-      padding: 40px 20px;
-    }
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    header img {
-      width: 180px;
-    }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 
-    header h1 {
-      font-size: 2rem;
-      color: #f1c40f;
-      margin-top: 20px;
-    }
-
-    header p {
-      color: #fff;
-      margin: 10px 0;
-      font-size: 1.1rem;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #f1c40f;
-      border-bottom: 2px solid #f1c40f;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
-
-    .products, .media {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background-color: #1b1b1b;
-      border: 1px solid #f1c40f;
-      padding: 20px;
-      text-align: center;
-      border-radius: 10px;
-    }
-
-    footer {
-      background-color: #111;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #ccc;
-    }
-
-    a {
-      color: #f1c40f;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <img src="/images/LOGO-AFK.png" alt="A Forgotten Kingdom Logo" />
-    <h1>Join the Competitive eSports Revolution</h1>
-    <p>Compete with top players in League of Legends and beyond!</p>
-    <p><strong>Join Our Kingdom Now</strong></p>
+    <div class="logo-text">A FORGOTTEN KINGDOM</div>
+    <nav class="nav-links">
+      <a href="#hero">HOME</a>
+      <a href="#mission">ABOUT</a>
+      <a href="#shop">SHOP</a>
+      <a href="#media">MEDIA</a>
+      <a href="#"><i class="fas fa-search"></i></a>
+      <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      <a href="#"><i class="fas fa-user"></i></a>
+    </nav>
   </header>
 
-  <section id="about">
-    <h2>About A Forgotten Kingdom</h2>
-    <p><strong>Our Mission:</strong> At A Forgotten Kingdom, our mission is to build a competitive eSports team that takes the scene by storm. We aim to foster a community of gamers who are passionate about eSports and teamwork.</p>
-  </section>
+ <!-- Hero Section (now includes Mission) -->
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-left">
+      <img src="images/LOGO-AFK.png" alt="AFK Logo">
+    </div>
 
-  <section id="products">
-    <h2>Team Merchandise</h2>
+    <div class="hero-right">
+      <h1>JOIN THE COMPETITIVE<br>ESPORTS REVOLUTION</h1>
+      <p>Compete with top players in League of Legends and beyond!</p>
+      <a href="#join" class="cta-button">JOIN OUR KINGDOM NOW</a>
+
+      <!-- Mission integrated here -->
+      <div class="hero-mission">
+        <h2>OUR MISSION</h2>
+        <p class="mission-desc">
+          At <strong>A Forgotten Kingdom</strong>, we strive to build a powerful eSports organization
+          that dominates the competitive scene while fostering a loyal, passionate community of gamers.
+          We are not just a team — we are a kingdom.
+        </p>
+        <p class="tagline">Together, We Reign.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Shop Section -->
+  <section id="shop">
+    <h2>TEAM MERCHANDISE</h2>
     <div class="products">
-      <div class="card">
+      <div class="product-card">
+        <img src="images/jersey.jpg" alt="AFK Jersey">
         <h3>AFK Jersey</h3>
         <p>Show your team pride with our official jersey.</p>
+        <button class="gold-button">Buy Now</button>
       </div>
-      <div class="card">
+
+      <div class="product-card">
+        <img src="images/hoodie.jpg" alt="AFK Hoodie">
         <h3>AFK Hoodie</h3>
         <p>Stay warm while representing the kingdom.</p>
+        <button class="gold-button">Buy Now</button>
       </div>
-      <div class="card">
+
+      <div class="product-card">
+        <img src="images/mousepad.jpg" alt="AFK Mousepad">
         <h3>AFK Mousepad</h3>
         <p>Precision and comfort for every game.</p>
+        <button class="gold-button">Buy Now</button>
       </div>
     </div>
   </section>
 
+  <!-- Media Section -->
   <section id="media">
-    <h2>Clips & Media</h2>
-    <div class="media">
-      <div class="card">
+    <h2>CLIPS & MEDIA</h2>
+    <div class="media-container">
+      <div class="media-card">
+        <i class="fas fa-play-circle"></i>
         <p><a href="#">Watch our latest highlight reel</a></p>
       </div>
-      <div class="card">
+      <div class="media-card">
+        <i class="fas fa-video"></i>
         <p><a href="#">Behind the scenes with the AFK squad</a></p>
+      </div>
+      <div class="media-card">
+        <i class="fas fa-trophy"></i>
+        <p><a href="#">Our tournament victories</a></p>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>Contact us: <a href="mailto:contact@afkesports.com">contact@afkesports.com</a></p>
     <p>Follow us on social media @AFKeSports</p>
